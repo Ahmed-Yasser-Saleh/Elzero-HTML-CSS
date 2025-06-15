@@ -1,0 +1,6 @@
+html tag
+
+<wbr> vs <br>
+<readonly> vs <disabled>
+<input> vs <button>
+<datalist> vs <select>
