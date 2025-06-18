@@ -1,0 +1,22 @@
+.parent .child .title {
+    color: #dd2222;
+}
+
+.parent .title {
+    color: blue;
+}
+
+div p,
+.title {
+    color: green;
+}
+
+.pg {
+    background-color: #dd2222;
+    padding: 10px;
+    margin: 10px 0;
+    width: fit-content;
+    max-width: 400px;
+    height: 30px;
+    overflow-y: hidden;
+}
