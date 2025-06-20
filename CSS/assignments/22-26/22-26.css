@@ -1,0 +1,42 @@
+div {
+    padding: 20px;
+    border: 3px solid red;
+    width: 500px;
+    margin: auto;
+}
+
+div p {
+    padding: inherit;
+    border: inherit;
+    text-align: center;
+    background-color: #80808087;
+}
+
+.a {
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.b {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-weight: 500;
+    text-align: center;
+}
+
+.c {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    text-align: center;
+
+}
+
+html {
+    font-size: 20px;
+}
