@@ -1,2 +1,13 @@
 block vs inline vs inline-block
 display vs visibility
+
+font-size
+note: default font size for page is 16px
+Css Uints:
+px
+em => size of font parent element
+rem => size of font  html element
+vm => view port width = 1% of width of page  ex: font-size = 5vm and width page = 900  so font-size = 5 * 9 = 45px
+percentage => percentage of font size parent element
+
+
