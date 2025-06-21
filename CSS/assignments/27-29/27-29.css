@@ -1,0 +1,73 @@
+.normal,
+.one,
+.two {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.normal {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: #a4a3a3;
+    color: black;
+}
+
+.one {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: rgb(229 226 227 0.1);
+    color: black;
+}
+
+.two {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: rgb(229 226 227);
+    color: black;
+    opacity: 0.1;
+}
+
+.parent {
+    background-color: #f6f5f5;
+    width: 800px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+div {
+    text-align: center;
+    margin: 15px 0 0 15px;
+    background-color: rgb(229 226 227);
+    padding: 10px 0;
+}
+
+.row1 {
+    width: calc(100% - 2 * 15px);
+    float: left;
+}
+
+.r2 {
+    width: calc(92.5% / 3);
+    float: left;
+}
+
+.r3 {
+    /* 5.625% -> 15/800 * 3 * 100 */
+    width: calc((100% - 5.625%) / 2);
+    float: left;
+
+}
+
+.r4 {
+    width: calc((100% - 9.375%) / 4);
+    float: left;
+    margin-bottom: 15px;
+}
