@@ -44,3 +44,55 @@
     position: absolute;
     left: 18px;
 }
+
+p {
+    background-color: rgb(229 226 227);
+    width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+    display: grid;
+    place-items: center;
+    padding: 15px;
+    border-right: 5px solid red;
+    position: relative;
+    counter-increment: counters;
+    /* choose name as you want */
+}
+
+/*  before, after for task 3 */
+/* p::before {
+    content: attr(data-person);
+    width: 55px;
+    padding: 10px;
+    position: absolute;
+    left: -100px;
+    background-color: rgb(229 226 227);
+    text-align: center;
+}
+
+p::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent red transparent transparent;
+    position: absolute;
+    left: -17px;
+} */
+
+/* before, after for task 4 */
+p::before {
+    content: counter(counters);
+    background-color: red;
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+    width: 25px;
+    top: 0px;
+    height: 48px;
+    position: absolute;
+    left: -13px;
+    display: grid;
+    place-items: center;
+}
