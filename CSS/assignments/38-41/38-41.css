@@ -1,0 +1,124 @@
+.task1 {
+    box-shadow: 6px 5px 2px 0px #5050d8, -6px -5px 2px 0px #c80a0a;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(229 226 227);
+    display: inline-block;
+    margin: 20px;
+    counter-increment: nums;
+    position: relative;
+    border: 2px solid black;
+}
+
+.task1::before {
+    position: absolute;
+    content: counter(nums);
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    width: 20px;
+    height: 20px;
+    display: grid;
+    place-items: center;
+    left: 40px;
+    top: -8px;
+}
+
+.task1::after {
+    content: "Element";
+    position: absolute;
+    left: 22px;
+    top: 38px;
+}
+
+.task2-parent {
+    width: 550px;
+    margin: auto;
+    position: relative;
+}
+
+.task2-parent::after {
+    left: 39.4%;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    border: 1px solid blue;
+    height: 217px;
+}
+
+.task2-parent::before {
+    content: "Or";
+    position: absolute;
+    background-color: #2f24da;
+    border-radius: 50%;
+    color: white;
+    width: 20px;
+    height: 20px;
+    display: grid;
+    place-items: center;
+    left: 207px;
+    top: 96px;
+    z-index: 30;
+}
+
+.task2-ch1,
+.task2-ch2 {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 220px;
+    background-color: rgb(229 226 227);
+}
+
+.task2-ch1 {
+    margin-right: 30px;
+}
+
+.task2-ch1::before {
+    top: 105px;
+    left: 79px;
+    content: "Free";
+    position: absolute;
+    font-size: 25px;
+    z-index: 30;
+}
+
+.task2-ch1::after,
+.task2-ch2::after {
+    content: "";
+    display: inline-block;
+    background-color: rgb(200 201 227);
+    width: 126px;
+    height: 120px;
+    border-radius: 50%;
+    left: 38px;
+    position: absolute;
+    top: 62px;
+}
+
+.task2-ch2::before {
+    top: 105px;
+    left: 79px;
+    content: "$30";
+    position: absolute;
+    font-size: 25px;
+    z-index: 30;
+}
+
+button {
+    padding: 10px;
+    background-color: #acace9;
+    border-radius: 10px;
+    position: absolute;
+    width: 80%;
+    left: 22px;
+    top: 14px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red;
+}
