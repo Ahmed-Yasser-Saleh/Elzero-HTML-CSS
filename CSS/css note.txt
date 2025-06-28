@@ -10,4 +10,10 @@ rem => size of font  html element
 vm => view port width = 1% of width of page  ex: font-size = 5vm and width page = 900  so font-size = 5 * 9 = 45px
 percentage => percentage of font size parent element
 
+vender prefix => add prefix before feature according to what browser support it if this feature is under testing
+only verticle margin collaps
+Css variables
+
+
+
 
