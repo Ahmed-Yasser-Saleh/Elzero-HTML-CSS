@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+
+.task1 {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-color: rgb(229 226 227);
+    color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: 2px solid rgb(229 226 227);
+    border-radius: 50% 50%;
+    box-shadow: 7px 0px 2px 0px orange, -7px 0px 2px 0px blue;
+}
+
+.task2 {
+    width: 600px;
+    height: 300px;
+    background-color: rgb(229 226 227);
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.task2 div {
+    background-color: red;
+    color: white;
+    text-align: center;
+    width: 32%;
+    padding: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.task3 {
+    width: 600px;
+    height: 300px;
+    background-color: rgb(229 226 227);
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.task3 div {
+    background-color: #a200ff;
+    color: white;
+    text-align: center;
+    width: 32%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.one {
+    align-self: flex-end;
+    order: 6;
+}
+
+.two {
+    order: 5;
+}
+
+.three {
+    order: 2;
+    align-self: flex-start;
+}
+
+.four {
+    order: 3;
+}
+
+.five {
+    order: 4;
+}
+
+.task4 {
+    width: 600px;
+    height: 300px;
+    background-color: rgb(229 226 227);
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.task4 div {
+    background-color: #00ff80;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 80px;
+}
+
+.One,
+.Three {
+    align-self: flex-end;
+}
+
+.Two {
+    align-self: flex-start;
+    width: 300px;
+}
+
+.task5 {
+    width: 600px;
+    height: 300px;
+    background-color: rgb(229 226 227);
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.task5 div {
+    color: white;
+    text-align: center;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 140px
+}
+
+.ONE {
+    background-color: orange;
+    order: 2;
+}
+
+.TWO {
+    background-color: green;
+    order: 3;
+    align-self: flex-end;
+}
+
+.THREE {
+    background-color: brown;
+    order: 4;
+}
+
+.FOUR {
+    background-color: burlywood;
+    order: 1;
+    align-self: flex-end;
+}
+
+.page {
+    width: 600px;
+    height: 600px;
+    background-color: rgb(229 226 227);
+    margin: auto;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.header {
+    background-color: rgb(226 226 226);
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    padding: 10px;
+}
+
+.links {
+    list-style: none;
+    background-color: rgb(186 183 184);
+    display: flex;
+    width: 480px;
+    height: 40px;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.logo {
+    background-color: rgb(186 183 184);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 90px;
+    height: 40px;
+}
+
+.main-area {
+    display: flex;
+    background-color: rgb(226 226 226);
+
+    justify-content: space-between;
+}
+
+.sidebar {
+    background-color: rgb(186 183 184);
+    justify-content: center;
+    padding: 10px;
+    width: 170px;
+    height: 485px;
+}
+
+.content {
+    background-color: rgb(186 183 184);
+    justify-content: center;
+    padding: 10px;
+    width: 400px;
+    height: 485px;
+}
+
+.footer {
+    display: flex;
+    background-color: rgb(226 226 226);
+}
+
+.copyright {
+    background-color: rgb(186 183 184);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: calc(100% / 2);
+    height: 40px;
+}
+
+.design {
+    background-color: rgb(186 183 184);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    width: calc(100% / 2);
+    height: 40px;
+}
