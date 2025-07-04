@@ -14,6 +14,7 @@ vender prefix => add prefix before feature according to what browser support it 
 only verticle margin collaps
 Css variables
 
-
-
+display: grid                            display: flex
+place-items: center    ==      justify-content: center   // horizintal
+                                                 align-items: center         // vertical   
 
