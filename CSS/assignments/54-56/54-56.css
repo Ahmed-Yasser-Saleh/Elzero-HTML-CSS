@@ -27,7 +27,7 @@
     position: absolute;
     left: -5px;
     top: -5px;
-    width: 410px;
+    width: 400px;
     height: 5px;
     background-image: linear-gradient(to right, red 20%, blue 20%, blue 40%, green 40%, green 60%, red 60%, red 80%, blueviolet 80%);
 }
@@ -37,7 +37,7 @@
     position: absolute;
     left: -5px;
     bottom: -5px;
-    width: 410px;
+    width: 400px;
     height: 5px;
     background-image: linear-gradient(to right, red 20%, blue 20%, blue 40%, green 40%, green 60%, red 60%, red 80%, blueviolet 80%);
 }
