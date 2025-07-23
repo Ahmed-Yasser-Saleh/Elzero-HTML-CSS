@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.task1 {
+    background-color: #607d8b;
+    width: 200px;
+    height: 200px;
+    margin: 150px auto;
+    position: relative;
+    border-bottom: 5px solid black;
+}
+
+.task1::before {
+    content: "";
+    background-color: black;
+    width: 138px;
+    height: 137px;
+    position: absolute;
+    border-bottom: 4px solid white;
+    border-right: 4px solid white;
+    top: -70px;
+    left: 29px;
+    transform: rotate(45deg);
+}
+
+.task1::after {
+    content: "Elzero";
+    top: 165px;
+    position: absolute;
+    padding: 10px;
+    color: white;
+}
+
+.task2 {
+    margin: 150px auto;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.task2 .face {
+    width: 200px;
+    height: 200px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.task2 .front {
+    background-color: red;
+}
+
+.task2 .back {
+    background-color: green;
+    transform: rotatey(180deg);
+    /* or rotatex as you need */
+}
+
+.task2:hover {
+    transform: rotatey(-180deg);
+    /* or rotatex as you need */
+}
+
+h1 {
+    position: absolute;
+    transform: translate(33px, 5px);
+}
+
+.task3 {
+    position: relative;
+    margin: 40px;
+    left: 38%;
+    color: white;
+}
+
+.task3 .one {
+    width: 150px;
+    height: 90px;
+    background-color: orange;
+    position: absolute;
+    transform: skewX(5deg) skewy(15deg);
+    z-index: -1;
+}
+
+.task3 .two {
+    width: 150px;
+    height: 90px;
+    background-color: orange;
+    position: absolute;
+    transform: skewX(-5deg) skewy(-15deg);
+    z-index: -1;
+}
+
+.task4 {
+    position: relative;
+    top: 0;
+    left: 33%;
+    transform: translate(-50% 0);
+    background-color: grey;
+    width: fit-content;
+    padding: 20px 50px;
+    margin: 100px;
+    color: white;
+    font-size: bold;
+    text-align: center;
+}
+
+.task4::after {
+    content: "";
+    position: absolute;
+    background-color: gray;
+    width: 15px;
+    height: 100%;
+    border-left: 49px solid white;
+    border-right: 6px solid white;
+    transform: skewX(20deg);
+    left: -58px;
+    top: 0;
+}
