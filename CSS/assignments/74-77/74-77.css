@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+.task1 {
+    margin: 50px auto;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 5px solid orange;
+    padding: 44px;
+    border-radius: 50%;
+    border-left-color: transparent;
+    position: relative;
+    animation-name: first-animation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.task1::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    border: 5px solid red;
+    border-radius: 50%;
+    border-right-color: transparent;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    padding: 3px;
+}
+
+.task1::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    border: 5px solid blue;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    padding: 11px;
+}
+
+.task1:hover {
+    animation-play-state: paused;
+}
+
+@keyframes first-animation {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.task2 {
+    margin: 50px auto;
+    background-color: gray;
+    border: 5px solid black;
+    border-radius: 50%;
+    border-left-color: transparent;
+    width: 50px;
+    height: 50px;
+    animation: second 1s linear infinite;
+}
+
+@keyframes second {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.task3 {
+    margin: 100px auto;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.one,
+.two {
+    position: relative;
+}
+
+.one::after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: orange;
+    position: absolute;
+    top: 29px;
+    right: 10px;
+    animation: one 6s 3s;
+}
+
+.two::after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: orange;
+    position: absolute;
+    bottom: 26px;
+    right: 8px;
+    animation: two 3s, op 7s 2s;
+}
+
+@keyframes one {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    10% {
+        transform: translateX(-35px) translateY(0);
+    }
+
+    20% {
+        transform: translateX(-35px) translateY(27px);
+    }
+
+    30% {
+        transform: translateX(-8px) translateY(27px);
+    }
+
+    40% {
+        transform: translateX(-35px) translateY(27px);
+    }
+
+    50% {
+        transform: translateX(-35px) translateY(54px);
+    }
+
+    60% {
+        transform: translateX(0px) translateY(54px);
+    }
+
+    70% {
+        transform: translateX(-35px) translateY(54px);
+    }
+
+    80% {
+        transform: translateX(-35px) translateY(0px);
+    }
+
+    90% {
+        transform: translateX(0px) translateY(0px);
+    }
+
+    100% {
+        transform: translateX(0px) translateY(0px);
+    }
+}
+
+@keyframes two {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    25% {
+        transform: translateX(-30px) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-30px) translateY(-53px);
+    }
+
+    100% {
+        transform: translateX(-30px) translateY(-53px);
+    }
+}
+
+@keyframes op {
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
