@@ -1,0 +1,115 @@
+@media print {
+    .task1 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+}
+
+.task2 {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.task2 div {
+    background-color: gray;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.task2 span {
+    font-weight: bold;
+    font-size: larger;
+}
+
+@media (max-width: 767px) {
+    .task2 div {
+        width: calc((100% / 4) - 30px);
+    }
+
+    .task2 span {
+
+        color: green;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .task2 div {
+        width: calc((100% / 2) - 30px);
+    }
+
+    .task2 span {
+        color: red;
+    }
+}
+
+@media (min-width: 992px) {
+    .task2 div {
+        width: 100%;
+    }
+
+}
+
+.task3 {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.task3 div {
+    background-color: gray;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.task3 span {
+    font-weight: bold;
+    font-size: larger;
+}
+
+@media (max-width: 767px) {
+
+    .task3 .one,
+    .task3 .four {
+        width: 100%;
+    }
+
+    .task3 .two,
+    .task3 .three {
+        width: calc((100% / 2) - 30px);
+    }
+
+    .task3 span {
+
+        color: green;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .task3 .one {
+        width: 100%;
+    }
+
+    .task3 .two,
+    .task3 .three,
+    .task3 .four {
+        width: calc((100% / 3) - 30px);
+    }
+
+    .task3 span {
+        color: red;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .task3 .one,
+    .task3 .two,
+    .task3 .three,
+    .task3 .four {
+        width: 100%;
+    }
+
+}
