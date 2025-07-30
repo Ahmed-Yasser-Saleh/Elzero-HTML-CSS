@@ -8,7 +8,7 @@ This repository includes all the tasks and exercises I’ve completed while foll
 - Git & GitHub
 
 ## 📁 Folder Structure
-Each folder represents a task.
+Each folder represents an assignment.
 
 ## ▶️ How to Run
 You can open any `.html` file in your browser to see the output.
